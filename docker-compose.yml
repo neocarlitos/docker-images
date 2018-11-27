@@ -1,0 +1,14 @@
+version: '3'
+services:
+  grlc:
+    build: grlc/
+    ports:
+     - "8088:8088"
+  notebook:
+    build: notebook/
+    ports:
+     - "8888:8888"
+  virtuoso:
+    build: virtuoso/
+    ports:
+     - "8890:8890"
