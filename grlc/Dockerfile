@@ -3,7 +3,7 @@ FROM python:2-slim
 RUN apt-get update
 RUN apt-get install -y git
 
-RUN pip install grlc
+RUN pip install git+https://github.com/CLARIAH/grlc.git
 
 RUN mkdir /grlc
 ADD config.docker.ini /grlc/config.ini
