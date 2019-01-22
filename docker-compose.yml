@@ -9,6 +9,6 @@ services:
     ports:
      - "8888:8888"
   virtuoso:
-    build: virtuoso/
+    build: pbg-ld/
     ports:
      - "8890:8890"
